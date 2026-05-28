@@ -20,6 +20,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://fairlane-5656.netlify.app",
+        "https://fairlane-5656.web.app",
     ],
     allow_origin_regex=r"https://.*\.netlify\.app",
     allow_credentials=True,
