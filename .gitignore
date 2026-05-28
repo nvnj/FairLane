@@ -42,7 +42,7 @@ env/
 .uv/
 
 # Data / DB
-data/fairlane.db
+#data/fairlane.db
 data/*.parquet
 data/*.csv
 
