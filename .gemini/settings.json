@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "phoenix": {
+      "command": "npx.cmd",
+      "args": [
+        "@arizeai/phoenix-mcp@latest",
+        "--baseUrl",
+        "https://app.phoenix.arize.com/s/naveenjohn2k",
+        "--apiKey",
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBcGlLZXk6NiJ9.Q3lmOBF6sY7JUxmplq4tiPT2Xa2U4DXSxNJFjNwzzjw"
+      ]
+    }
+  },
+  "skills": {
+    "disabled": [
+      "arize-trace"
+    ]
+  }
+}

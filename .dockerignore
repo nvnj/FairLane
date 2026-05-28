@@ -1,0 +1,8 @@
+.env
+data/fairlane.db
+console/node_modules
+__pycache__
+**/__pycache__
+*.pyc
+.git
+tests/
