@@ -24,7 +24,11 @@ test:
 	uv run pytest tests/ -v
 
 deploy:
-	gcloud run deploy fairlane --source . --region us-central1 --allow-unauthenticated
+	gcloud run deploy fairlane `
+>>   --source . `
+>>   --region us-central1 `
+>>   --allow-unauthenticated `
+>>   --set-env-vars="GOOGLE_CLOUD_PROJECT=fairlane-hackathon,GOOGLE_CLOUD_LOCATION=us,PHOENIX_API_KEY=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJBcGlLZXk6NiJ9.Q3lmOBF6sY7JUxmplq4tiPT2Xa2U4DXSxNJFjNwzzjw,PHOENIX_COLLECTOR_ENDPOINT=https://app.phoenix.arize.com/s/naveenjohn2k,PHOENIX_PROJECT_NAME=FairLane,GEMINI_MODEL=gemini-3.5-flash,ESCALATION_FLIP_THRESHOLD=0,ESCALATION_JUDGE_THRESHOLD=0.85,ESCALATION_TERMS_GAP_THRESHOLD=0.05"
 
 drift-report:
 	uv run python -m observability.drift_monitor --report
