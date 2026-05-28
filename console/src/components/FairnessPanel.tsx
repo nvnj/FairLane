@@ -1,4 +1,4 @@
-import type { AuditPacket, Variant } from "../types";
+import type { AuditPacket } from "../types";
 import { JudgeScoreBar } from "./JudgeScoreBar";
 
 

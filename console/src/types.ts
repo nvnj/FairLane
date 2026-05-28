@@ -21,8 +21,9 @@ export interface Variant {
   swept_attribute: string;
   swept_value: string;
   decision: "approve" | "deny" | "refer";
-  rate: number;
-  amount: number;
+  rate: number | null;
+  amount: number | null;
+  [key: string]: unknown;
 }
 
 
